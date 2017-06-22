@@ -8,21 +8,21 @@
     <meta name="description" content="We specialise in making whiteboard videos for all purposes. You'll be able to rely on our efficiency and technical competence plus the talents of our renowned, experienced team to make a truly impressive whiteboard video for any business.">
     <meta name="Keywords" content="Whiteboard,Animated Video,Custom Video,Typography,Animation,Video Production,Whiteboard Videos,Whiteboard Animation,Explainer Videos,Blackboard Video,Drawing Animation,Doodle Video,Sketch Video,Chalkboard Video,Custom Animation,Video Presentation,Video,Commercial,Explainer Video,Professional,YouTube,Website Video,Whiteboard Video,Doodle Animation,Web Video">
     <meta name="robots" CONTENT="index, follow">
-    <title>Whiteboard.Video|Best Whiteboard Video</title>
+    <title>Examples|Best Whiteboard Video</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="css/style.css"/>
-    <link href="css/fluid.css" rel="stylesheet" type="text/css"/>
-    <?php include ('includes/googleanalytics.php'); ?>
+    <link rel="stylesheet" type="text/css" href="../css/style.css"/>
+    <link href="../css/fluid.css" rel="stylesheet" type="text/css"/>
+    <?php include ('../includes/googleanalytics.php'); ?>
 </head>
 
 <body>
-    <?php include("includes/header.php"); ?>
+    <?php include("../includes/header.php"); ?>
     <?php 
     $table = "whiteboard";
     $show = "99";
-    include("includes/showDemo.php"); 
+    include("../includes/showDemo.php"); 
     ?>
     <section class="examples">
         <h2 class="text-center white">Visual and Auditory Appeal</h2>
@@ -37,7 +37,7 @@
         </div>
     </section>
     
-    <?php include("includes/footer.php"); ?>
+    <?php include("../includes/footer.php"); ?>
     
 </body>
 

@@ -1,5 +1,5 @@
-body { margin: 0; padding: 0; width: 100%;font-family: "swister",sans-serif;font-style: normal;font-weight: 500;font-size: 3rem }
-h1,h2,h3,h4,h5,h6{font-weight: 700}
+body { margin: 0; padding: 0; width: 100%;font-family: "delve-hand",sans-serif;font-style: normal;font-weight: 400;font-size: 3rem }
+h1,h2,h3,h4,h5,h6{font-family: "swister",sans-serif;font-style: normal;font-weight: 700;}
 h2{font-size: 4rem}
 h3{font-size: 3.5rem}
 h4{font-size: 3rem}
@@ -22,12 +22,13 @@ input, textarea, select { outline: none; resize: none }
 .header-phone a:hover{text-decoration: none;color: #7F7F7F}
 .banner { width: 100%; padding: 40px; background: #404040; background: -moz-linear-gradient(top, #404040 0%, #BFBFBF 100%); background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #404040), color-stop(100%, #BFBFBF)); background: -webkit-linear-gradient(top, #404040 0%, #BFBFBF 100%); background: -o-linear-gradient(top, #404040 0%, #BFBFBF 100%); background: -ms-linear-gradient(top, #404040 0%, #BFBFBF 100%); background: linear-gradient(to bottom, #404040 0%, #BFBFBF 100%); filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#404040', endColorstr='#BFBFBF', GradientType=0)
 }
-.banner-video { margin: 35px auto 0 }
+.banner-video { margin: 35px auto;}
+.quote-holder{border-top: solid medium #7F7F7F;border-bottom: solid medium #7F7F7F;background: -webkit-linear-gradient(-45deg, #FFF, #F0F0F0, #FFF, #F0F0F0, #FFF, #F0F0F0, #FFF, #F0F0F0, #FFF); background-size: 6px 6px;}
 .banner-text { font-size: 6rem; color: #fff; line-height: 34px; letter-spacing: -.03em; padding-top: 10px; text-align: center }
 .jumbotron .banner-text{color: #000}
 .formbox { background-color: #fff; border-radius: 14px; padding: 10px }
 .get-a-quote { max-width: 600px; margin: 0 auto; border: 1px solid #404040; background-color: #FFF; padding: 10px 20px; border-radius: 12px }
-.quote { font-size: 50px; font-weight: 100; text-align: center; color: #FFF }
+.quote { font-size: 50px; font-weight:700; text-align: center; color: #233B52 }
 .get-a-quote input, .get-a-quote textarea { margin: 5px auto; padding: 4px; border: 1px inset #FFF; line-height: 3em; background-color: #D8E1E9; font-size: 2rem; color: #565555; font-weight: 700; outline: #636161 solid thin }
 .form-group { margin-bottom: 0 }
 .i-need-video { background: url(../images/i-need-video.png)!important; width: 378px!important; height: 75px!important; margin: 0!important; padding: 0!important; margin-left: -26px!important; margin-top: 0!important; cursor: pointer }
@@ -85,7 +86,8 @@ color: #000!important; text-shadow: 0 -1px 0 rgba(255,255,255,0.46) }
 .white{color: white}
 blockquote{font-size:3rem}
 .black, .text-info{color: #000000}
-.media-body{width: 50%;padding-left: 10px;line-height: 3rem;font-size: 3.5rem}
-.media-left, .media-right{width: 50%}
-.media{border-bottom: solid thin rgba(0,0,0,0.3);margin-bottom: 20px;padding-bottom: 10px}
+.media-body{width:30%;padding-left: 10px;line-height: 3rem;font-size: 3rem}
+.media-left, .media-right{width: 70%}
+.media{padding: 30px 0}
 .background-hash{padding: 50px 0; color: #000; background: -webkit-linear-gradient(45deg, #FFF, #EEEEEE, #FFF, #EEEEEE, #FFF, #EEEEEE, #FFF, #EEEEEE, #FFF); background-size: 10px 10px;}
+.slider-holder{min-height: 540px}

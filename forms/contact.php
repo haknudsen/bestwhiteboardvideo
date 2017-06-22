@@ -1,5 +1,5 @@
-<h1 class="quote">Get A Quote!</h1>
 <div class="get-a-quote">
+    <h1 class="quote">Get A Quote!</h1>
     <?php
     $pageURL = 'http';
     if ( $_SERVER[ "HTTPS" ] == "on" ) {

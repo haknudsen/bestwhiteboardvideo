@@ -56,7 +56,7 @@
             <div class="form-group">
                 <div class="row center-block" align="center">
                     <div class="col-sm-10 col-sm-offset-1">
-                        <button name="submit" class="btn btn-custom" id="submit">I NEED VIDEO</button>
+                        <button name="submit" class="btn btn-custom" id="submit"><h2 class="text-uppercase m-10">I NEED VIDEO</h2></button>
                     </div>
                 </div>
             </div>

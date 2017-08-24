@@ -1,8 +1,8 @@
 <footer>
     <div class="footer">
-        ©
-        <?php echo date("Y")?>, <a href="http://websitetalkingheads.com" target="_blank">TalkingHeads.com</a>. All Rights Reserved.
-        <h2 class="footer-title"><a href="http://talkingheads.com/affiliate/">Powered by <span class="blue">Talking</span> Heads<sup class="tm-small">&#174;</sup></a></h2>
+        <h2 class="footer-title"><a href="http://www.talkingheads.video/affiliate/" title="Talking Heads® Affiliate Program" >Powered by <span class="blue">Talking</span> Heads<sup class="tm-small">&#174;</sup></a></h2>
+        <h3><a href="/links/">Whiteboard Video</a></h3>
+        ©<?php echo date("Y")?>, <a href="http://www.talkingheads.com" target="_blank">TalkingHeads.com</a>. All Rights Reserved.
     </div>
 </footer>
 <!-- Google Code for Previous Visitors --> 

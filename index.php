@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/477bc21f61.js"></script>
     <link rel="stylesheet" type="text/css" href="css/style.css"/>
     <link href="css/fluid.css" rel="stylesheet" type="text/css"/>
     <?php include ('includes/googleanalytics.php'); ?>
@@ -113,6 +114,7 @@
             <div class="col-lg-6">
                 <h2>Latest Blog Post- <span id="title"></span></h2>
                 <p id="excerpt" class="text-info"></p>
+                <?php include("includes/social-media.php");?>
             </div>
             <div class="col-lg-6 pad-this">
                 <?php include("forms/contact.php"); ?>
@@ -131,7 +133,6 @@
 
         </div>
     </section>
-    <?php include("includes/TalkingHeadsAffiliate.php"); ?>
     <?php include("includes/footer.php"); ?>
     <script src="js/blog-post.js"></script>
     <script>
@@ -139,15 +140,12 @@
             if ( $( document ).width() > 1200 ) {
                 padHeight( ".banner-video", ".pad-this" );
             }
+        });
 
         function padHeight( holder, toPad ) {
             var hHeight = $( holder ).innerHeight();
             var bHeight = $( toPad ).outerHeight();
             var pad = ( hHeight - bHeight ) / 2;
-            $( toPad ).css( 'margin-top', pad + 'px' );
-            console.log( 'hHeight-' + hHeight );
-            console.log( 'bHeight-' + bHeight );
-            console.log( 'pad-' + pad );
         }
     </script>
 </body>

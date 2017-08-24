@@ -23,6 +23,7 @@ input, textarea, select { outline: none; resize: none }
 .banner { width: 100%; padding: 40px; background: #404040; background: -moz-linear-gradient(top, #404040 0%, #BFBFBF 100%); background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #404040), color-stop(100%, #BFBFBF)); background: -webkit-linear-gradient(top, #404040 0%, #BFBFBF 100%); background: -o-linear-gradient(top, #404040 0%, #BFBFBF 100%); background: -ms-linear-gradient(top, #404040 0%, #BFBFBF 100%); background: linear-gradient(to bottom, #404040 0%, #BFBFBF 100%); filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#404040', endColorstr='#BFBFBF', GradientType=0)
 }
 .banner-video { margin: 35px auto;}
+.banner-video h2{margin-top: 0}
 .quote-holder{border-top: solid medium #7F7F7F;border-bottom: solid medium #7F7F7F;background: -webkit-linear-gradient(-45deg, #FFF, #F0F0F0, #FFF, #F0F0F0, #FFF, #F0F0F0, #FFF, #F0F0F0, #FFF); background-size: 6px 6px;}
 .banner-text { font-size: 6rem; color: #fff; line-height: 34px; letter-spacing: -.03em; padding-top: 10px; text-align: center }
 .jumbotron .banner-text{color: #000}
@@ -44,8 +45,9 @@ blockquote{border: none}
 .no-1 { padding: 10px; color: #525252; line-height: 20px; font-weight: 400 }
 .no-1 span { color: #c60000 }
 .no-1-image { float: left; margin-right: 40px }
-.footer { border-top: #d9d9d9 solid 2px; padding: 20px 0; text-align: center; font-size: 3rem; color: #bac2cd;background-color: #404040 }
+.footer { border-top: #d9d9d9 solid 2px; padding: 20px 0; text-align: center; font-size: 1rem; color: #bac2cd;background-color: #404040 }
 .footer a { color: #bac2cd }
+.footer a:hover{color: white}
 .message { font-weight: 700; color: #000; margin-top: -28px; height: 25px }
 .btn-custom { margin: 10px auto; background-color: hsl(0,88%,28%)!important; background-repeat: repeat-x; filter:progid:DXImageTransform.Microsoft.gradient(startColorstr="#BFBFBF", endColorstr="#404040");
 background-image: -khtml-gradient(linear, left top, left bottom, from(#BFBFBF), to(#404040)); background-image: -moz-linear-gradient(top, #BFBFBF, #404040); background-image: -ms-linear-gradient(top, #BFBFBF, #404040); background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #BFBFBF), color-stop(100%, #404040)); background-image: -webkit-linear-gradient(top, #BFBFBF, #404040); background-image: -o-linear-gradient(top, #BFBFBF, #404040); background-image: linear-gradient(#BFBFBF, #404040); border-color: #404040 #404040 hsl(0,88%,21.5%); text-shadow: 0 2px 0 rgba(0,0,0,0.7); color: #fff!important; -webkit-font-smoothing: antialiased; width: 100%; height: 80px; border-radius: 16px; font-size: 5rem }
@@ -90,5 +92,48 @@ blockquote{font-size:3rem}
 .media-left, .media-right{width: 70%}
 .media{padding: 30px 0}
 .background-hash{padding: 50px 0; color: #000; background: -webkit-linear-gradient(45deg, #FFF, #EEEEEE, #FFF, #EEEEEE, #FFF, #EEEEEE, #FFF, #EEEEEE, #FFF); background-size: 10px 10px;}
-.slider-holder{min-height: 540px}
+.slider-holder{min-height: 509px}
 .m-10{margin: 10px auto}
+/*********************************************************************
+ * #### jQuery Awesome Sosmed Share Button / AyoShare.js v17 ####
+ * Coded by Ican Bachors 2014.
+ * https://github.com/bachors/jQuery-Awesome-Sosmed-Share-Button
+ * Updates will be posted to this site.
+ *********************************************************************/
+.ayoshare { font-family: sans-serif; padding: 4px; overflow: hidden; }
+.ayoshare .button { position: relative; display: inline-block; height: 40px; margin: 2px; overflow: hidden; width: 98px }
+.ayoshare .button.small { width: 48px }
+.ayoshare .button a { cursor: pointer }
+.ayoshare .icon { display: block;  position: relative; z-index: 3; height: 100%; vertical-align: top;  text-align: center;border: thin solid }
+.ayoshare .icon i { color: #fff; line-height: 42px; }
+.ayoshare .mobile { display: block;  position: relative; z-index: 3; height: 100%; vertical-align: top; width: 100%; text-align: center;border:thin solid rgba(0,0,0,0.7);border-radius: 6px}
+.ayoshare .mobile i { color: #000; line-height: 42px; }
+.ayoshare .counter { z-index: 2; display: block; margin: 0; height: 100%; left: 38px; position: absolute; width: 60px }
+.ayoshare .counter p { font-weight: 400; border-left: 1px solid rgba(255,255,255,0.35); color: #fff; font-size: 16px; left: 0; margin: 0; position: absolute; text-align: center; top: 10px; width: 100%; }
+.ayoshare a { color: #000; text-decoration: none; }
+.ayoshare .facebook .mobile, .ayoshare .facebook .icon, .ayoshare .facebook .counter { background-color: #FFFFFF; }
+.ayoshare .linkedin .mobile, .ayoshare .linkedin .icon, .ayoshare .linkedin .counter { background-color: #FFFFFF; }
+.ayoshare .stumbleupon .mobile, .ayoshare .stumbleupon .icon, .ayoshare .stumbleupon .counter { background-color: #FFFFFF; }
+.ayoshare .bufferapp .mobile, .ayoshare .bufferapp .icon, .ayoshare .bufferapp .counter { background-color: #FFFFFF; }
+.ayoshare .reddit .mobile, .ayoshare .reddit .icon, .ayoshare .reddit .counter { background-color: #FFFFFF; }
+.ayoshare .pinterest .mobile, .ayoshare .pinterest .icon, .ayoshare .pinterest .counter { background-color: #FFFFFF; }
+.ayoshare .vk .mobile, .ayoshare .vk .icon, .ayoshare .vk .counter { background-color: #FFFFFF; }
+.ayoshare .pocket .mobile, .ayoshare .pocket .icon, .ayoshare .pocket .counter { background-color: #FFFFFF; }
+.ayoshare .google .mobile { background-color: #FFFFFF; }
+.ayoshare .twitter .mobile { background-color: #FFFFFF; }
+.ayoshare .digg .mobile { background-color: #FFFFFF }
+.ayoshare .flipboard .mobile { background-color: #FFFFFF }
+.ayoshare .email .mobile { background-color: #FFFFFF }
+.ayoshare .whatsapp .mobile { background-color: #FFFFFF; }
+.ayoshare .telegram .mobile { background-color: #FFFFFF; }
+.ayoshare .viber .mobile { background-color: #FFFFFF; }
+.ayoshare .line .mobile { background-color: #FFFFFF; }
+.ayoshare .bbm .mobile { background-color: #FFFFFF; }
+.ayoshare .sms .mobile { background-color: #FFFFFF; }
+/* add hover and active effects */
+.ayoshare .button:hover .icon, .ayoshare .button:hover .counter, .ayoshare .button:hover .mobile, .ayoshare .button:active .icon, .ayoshare .button:active .counter, .ayoshare .button:active .mobile { background-color: rgba(0, 0, 0, 0.2); }
+/* font awesome doesn't provide official Line Messenger , Bufferapp & BBM icon */
+.ayoshare .fa-line { background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAARuSURBVHja7Jh9TFV1GMe/55z7yuu5lzcvRFlJTWZwaS6Vpi4HlIBhaUJrOKeA8z/IVv3Ry8o/mi6nNXTVHBuKIBWkEYzBALmw4FIXx4ILiEMXyPu9cMFd79u5T38ECNbqgMfl1n2289/zPL/Pnrc952GICI+ysHjExQfoA/QB+gD/74AyMUob2jbA6rFiW9B2JGmTMO4ex5RrCjH+Maw+MH5XABeQFKWKiuXlvI4Bw866ZydGXaP9Nret+bp9oLJz1mTXyrXQKSJhtBlRM10NjUyDni090gAuhpvhMOmahIfcXJYu86OEoIT3FIxCeb8eL+ef5eX8VgA5m/hNF+IC476pt9S/O+YcszEPI4IMGDAAbjuG8XrYa/r0iLQmFavixdrqA+Pz9IHxeXWT9a+229qqBBLmPUpUgy64MOIYhT4ofsde3Z5rYuHul5Sw5B+TQ1NyJxwTcJJTnBER/esX1xqHDNPuSI/X4yIJJK/78IvrDbGi3hYVQQ2nRcET+Sc5hpNL0ZnvrD16WifXSRfBTwY+3bY0Au/3F1Dx8DkiInIKTsrvPULGmZ8ppzubLK4pIiLK7ztCJlsHZf/2BoVeVdPGtlhyCI5FH8dvnEgV87YoQNOM6cOlgDGGdZTbnUNERFaXlSIawql8tJxwBZTZuYeIiKKboqnwViGFNoRQ4dAXZJhuWpZm81zvMclSHBsYu3ZZypVqBMgV813GQKv2A8t4sTEyFpXjFfi4/wM8r1mPILkfeJUSl8e/RdnIebi97kUfT/k9GSlZF085p+b+boAsLRO7145ghkftC3X4/NYJtMy0wJ/zAwsWKaGp2Bm+C3L2XglbXdN2yQBPmk//smwQQ4dTg2eQ3JmIqsnL4KGDS/Ci13YTO7TJOBv/FazTd+ERGFjsdlyz/QqTrQNuuhfBL/sKuyRrkuBSTbB5xmxeqJ9mayNl9+yjl0xbqH6qlgzTTTRov0FlY+fJS14iIro4WkwjjttUOHSKMrpeoVzzfnIKTiIimnHZbGGl4WGSNQkKgcyrWVkkkRR0vH0UZ0S+LUqpBMBZ4NxAUdGDwv00XF2DrwGUQLpBzXJqwB/IqT94sGiwuHi1A7rNYjSm16alQgGwMrWE+yARWKUa8GNxqObAgb0tWW/Nee64VgJXPVZbl/j95s0AwPqpAZEHA/ELq5fAKpRgNHJUdJWX8hdDAve3HzpcO1LXavfYvf9keqzns+PpFTtfhgxgA9SAV/w1gxFz+uDK5tNB8x/LwOt2AnNegAMgAxehiX7alNpeFaWOfGbBbs5zx5HemJFu6G1sgJYDK1P86WB+hApZdx/Syk8EVqYAwysBJaALeVzY+lji9Tlh1rygcmnoux/4kpAgw0BjAxuuBMspVhS5VW3Uf5mfghPPrUnAm+v2wUMCdKpIvcVpQVrz7u3GvlYDAhiwIQspXd2RSvZAexMrg4cEVN68gjH7ONawuuJLv5e3G/taDfBnwKpVq4raimvQ99vpA/QB+gB9gP+d/DEAL5Ee2yGyv1IAAAAASUVORK5CYII="); /* Line Logo */ background-size: cover; width: 32px; height: 32px; margin: 3px 0 0 0; padding: unset; }
+.ayoshare .fa-bufferapp { background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAAHiSURBVHja7NhPiE5RGMfx5yWzUTQbFhYkkw2pKSVKlNhgIxaS1GiKsGJjg4UUCwtTlI2sJH82U0KNshEJKYVJIgtqmjdiUkwfm6Nu1zXjfd/7vkbur07de89zzvl2zv0959xbQ0xlTYsprgqwAqwAK8B/CHBbRNyLiOGIOBoRs0vpFa2WnXjsV33GCcxppf9WwHbjpcn1DaexoBOANezHW83pHBa1C/AUxpWjB+j7k3EbMcmniBgtyVAjETHWLpPswLMmZu1rM6ZpxSRb0lJNplEcwaxOuXhJ7n4z7hSAvcchzMjELm0UtBGwPXiSBn+OXbn6dbiJRziQq1uOa6ntGM5iQ9mA5wtm6RX2TtBmLW4VtHs9Sbuml3gujuNLbsB3OIiuFLcRQwVgV7CqEyaZiWOo5wA+4k0B2GX0dsok2Ze+Kxnhw28cfAGLM/HT2wm4Jg1YxyBW5Or3YRgjOIOFmbrulAPr6WDRV5ANWga8XjBDg1hdsF//vJ6HkylJZzWOw+1Y4pUJKq8hrM/EzcdAQdwL9HfCJL24VADwELcLnj/F9k6fBwPLcHGCbe4+tv6tA2u29KRE/j2B3cWmMvqulfjzqCci+iOiOyKuRsSNMjotE7D67KwAK8AKsAL8HwF/DAC3lzjL9tbjTwAAAABJRU5ErkJggg=="); /* Bufferapp Logo */ background-size: cover; width: 32px; height: 32px; margin: 3px 0 0 0; padding: unset; }
+.ayoshare .fa-bbm { background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAANJSURBVHja7JY9iF1FFMf/Z87M3K/dfb5lu6BCwEoUGwsLKxtFAkEELSwtVoSATVq/GgsLEcEuEFKkMYEQxaCIWAQMpFQERUQQlvWDt+t9b9+983GOxXvPWLi7vIchIHuaGbjM/O6c8/+fGVJV3IswuEdxAj4B37Wwh3347dffYdhUG4P1jw1xDaAFgQAACwfSfLzjSAWwliQGmeoZp7a1A7scuG7qF4vCvxZivNV1k3POFRDJMx4ZAApVBYhAIKgKiAxyiigr/65vypshxPcscOHf9qcjGshnOcupg4ODh0GEGBNyCmBmGMNQFeScwcxgtjDWQXIGQZFTwtrG+m1m3iXg2WVrzERIbD1UFTlFDIebP2xubiqzecL74vmtrS1tmuZGzgnWGMTQAwB8UYCATEdk9CiwqgJ96CGisM4h5/RpjOm6qv4hIvsp5c9jipfZ2geLwl+qquqVlDJUFUREq6qaAMCQmdUPOA1AY4pXc5bvmfnRlNLXXRcuWuYXiPBSURSvqspCbbSSqu/AFSoKX/gni6I4JyK/9F1/ua6rdwDYkMIXIvL+ZHJwfTqdfue9Azu3up0WIapgZuScr7Tt+KOU0gREW+PJ5JmU8u0saW/zvuEBEVUi+WxK+Zo1Bsdk+jjwTPI6k/9YVJGyYL2pt8uqfDtn+aZt20dSSh+IyLjvw1dVVcJai7lbaBUwATAqAucdoIKUMtgAfQg3RfFGzukGiBBCOB9jBDOjKAos5kSkS4ur7/tviWjLWfu4+cd/V2UJEL7s+umbCr3lLAMAnHOoqhIhREyn3WOqeqrv+x8PPdVhDWRnZwdlWT49HA4viMiVth2ft9Y+1TT1NoCdxbrZqAAIRCSqClV9ruv6l1OSa4PB2nLg3d1dqALO+wcGG+ufxJg+dN6/NRrtv26I1qw1NPfr32pQFfbeUdd1l8jYn70vsNaUy9XYuVnHYmPuN8ZUzPZsP20fWq8wGv3ZYTLJMPMaLOA5Z9T1DMTGrHYtqipEBFVdbUPR7O3tn/HejMqmxsZGBSKCtQxred6vZ3Nj+LjecfSJs2QQEUTkp1G7f1qB3hABkFleie7OfcyGQER1COGqqEyNIfyXL2E6eVefgP934L8GAFPbrYEFvuxUAAAAAElFTkSuQmCC"); /* BBM Logo */ background-size: cover; width: 32px; height: 32px; margin: 3px 0 0 0; padding: unset; }
+.ayoshare .fa-flipboard { background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEIAAABCCAYAAADjVADoAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAADWSURBVHja7NsxDoIwFAbgYhw4goOcgEM4cAjvy+AtYJGhoyOJQ12YHMDEJlb9/pWmTb7kvbw0pUopBQlhhwAECBAgQIAAAQIECBAgQIAAAQIECBAgyss+52bzPF+31tyGYcxx1qFtT8VCLDm++f2V9EpDjwABAgSIH5kjMqX/C4h7jFtLYtN1Z6WhR4AAAQIECAPVU6YQwqVEiCrnO8vlhmrt4mWq67pRGnoECBAgQIAwUK0MTV+Xyo8rSgMECBAgQIAAAQIECBAgQIAA8Zk8AAAA//8DAIUmH3yIYUyXAAAAAElFTkSuQmCC"); /* Flipboard Logo */ background-size: cover; width: 32px; height: 32px; margin: 3px 0 0 0; padding: unset; }

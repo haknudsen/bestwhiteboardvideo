@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="We specialise in making whiteboard videos for all purposes. You'll be able to rely on our efficiency and technical competence plus the talents of our renowned, experienced team to make a truly impressive whiteboard video for any business.">
+    <meta name="description" content="Our Whiteboard videos appeal to the visual and auditory senses and are highly efficient tools to get your point across. They grab viewer's attention and quickly drive your message home. ">
     <meta name="Keywords" content="Whiteboard,Whiteboard Video Maker,Animated Video,Custom Video,Typography,Animation,Video Production,Whiteboard Videos,Whiteboard Animation,Explainer Videos,Blackboard Video,Drawing Animation,Doodle Video,Sketch Video,Chalkboard Video,Custom Animation,Video Presentation,Video,Commercial,Explainer Video,Professional,YouTube,Website Video,Whiteboard Video,Doodle Animation,Web Video">
     <meta name="robots" CONTENT="index, follow">
     <title>Best-Whiteboard-Video.com|Best Whiteboard Video</title>
@@ -131,29 +131,14 @@
 
         </div>
     </section>
+    <?php include("includes/TalkingHeadsAffiliate.php"); ?>
     <?php include("includes/footer.php"); ?>
+    <script src="js/blog-post.js"></script>
     <script>
         $( window ).load( function () {
             if ( $( document ).width() > 1200 ) {
                 padHeight( ".banner-video", ".pad-this" );
             }
-            $( document ).ready( function () {
-                $.ajax( {
-                    url: "http://seovideoexperts.com/wp-json/wp/v2/posts?per_page=1",
-                    success: function ( result ) {
-                        var excerpt = result[ 0 ].excerpt.rendered;
-                        var linkStart = '[&hellip;]';
-                        var theLink = '<a href="http://seovideoexperts.com/">[&hellip;]</a>';
-                        var excerptLink = excerpt.replace( linkStart, theLink );
-                        $( "#excerpt" ).html( excerptLink );
-                        $( '#title' ).text( result[ 0 ].title.rendered );
-                    },
-                    error: function ( xhr ) {
-                        alert( "An error occured: " + xhr.status + " " + xhr.statusText );
-                    }
-                } );
-            } );
-        } );
 
         function padHeight( holder, toPad ) {
             var hHeight = $( holder ).innerHeight();

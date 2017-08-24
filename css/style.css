@@ -95,7 +95,7 @@ blockquote{font-size:3rem}
 .blackboard{padding: 20px; color:rgba(255,255,255,0.88); background: -webkit-linear-gradient(45deg, #000, #192031, #000, #192031, #000, #192031, #000, #192031, #000); background-size: 10px 10px;}
 .slider-holder{min-height: 509px}
 .m-10{margin: 10px auto}
-.best-whiteboard{width: 33%;padding: 1rem;margin-right: 10px}
+.best-whiteboard{width: 33%;padding: 1rem;margin:0 10px}
 .striped:nth-of-type(odd){
   background-color: #efefef;
     border-top: thin solid #aaaaaa

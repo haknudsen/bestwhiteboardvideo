@@ -21,6 +21,8 @@
                         </li>
                         <li><a href="#">|</a>
                         </li>
+                        <li><a href="http://best-whiteboard-video.com/best-whiteboard">Best</a>
+                        </li>
                         <li><a href="http://best-whiteboard-video.com/contact.php">Contact</a>
                         </li>
                     </ul>

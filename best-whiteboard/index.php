@@ -21,15 +21,10 @@
     <?php include("../includes/header.php"); ?>
     <?php 
     $table = "whiteboard";
-    $show = "16";
-    include("../includes/showDemo.php"); 
+    $show = "3";
+    include("../includes/bestDemo.php"); 
     ?>
-    <section class="blackboard">
-        <h2 class="text-center white">Visual and Auditory Appeal</h2>
-       <p>Whiteboard videos appeal to the visual along with auditory senses and are highly effective. With that person's eye attention they drive your message home quickly along with creating maximum impact. </p>
-       <p>We use skilled voice over artists in the spoken presentation of the script and have excellent command with the spoken language pertaining to pronunciation and diction. They are do a highly impressive delivery making use of their captivating voice along with impressive mannerisms.</p>
-       <p>You can see that whiteboard video an extremely powerful way to get your call to action out. In addition, another important thing about whiteboard videos is the ability to show your idea in many different ways including graphics, images, text and animations may possibly work with the subject. You can also include your brand in it making it come alive. </p>
-    </section>
+    
     <section class="container-fluid call-now">
         <div class="">
             <h2 class="call-now-to-get-results">CALL NOW to Get Results!</h2>
